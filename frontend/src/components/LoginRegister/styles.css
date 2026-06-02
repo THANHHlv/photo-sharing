@@ -1,0 +1,11 @@
+.login-paper {
+  padding: 16px;
+}
+
+.login-title {
+  margin-bottom: 16px;
+}
+
+.login-col {
+  flex: 1;
+}

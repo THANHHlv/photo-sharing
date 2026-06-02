@@ -1,0 +1,12 @@
+.main-topbar-buffer {
+  margin-top: 70px;
+}
+
+.main-grid-item {
+  height: calc(100vh - 85px);
+  padding: 10px;
+}
+
+.app-loading {
+  padding: 16px;
+}

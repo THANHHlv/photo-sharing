@@ -1,0 +1,22 @@
+.photo-img {
+  width: 100%;
+  max-height: 480px;
+  object-fit: cover;
+  display: block;
+}
+
+.photo-comment {
+  margin-bottom: 8px;
+}
+
+.photo-divider {
+  margin: 12px 0;
+}
+
+.photo-comment-form {
+  margin-top: 16px;
+}
+
+.photo-nav-count {
+  align-self: center;
+}

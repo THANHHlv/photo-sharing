@@ -1,0 +1,21 @@
+.topbar-appBar {
+  height: 60px;
+  justify-content: center;
+}
+
+.topbar-toolbar {
+  gap: 16px;
+}
+
+.topbar-title-wrap {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.topbar-checkbox {
+  color: inherit;
+}
+
+.topbar-checkbox.Mui-checked {
+  color: inherit;
+}
