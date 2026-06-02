@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { API_BASE_URL } from "../../config/api";
 import formatDateTime from "../../lib/formatDate";
 import "./styles.css";
-
+// hiển thị ảnh và cmt
 export default function PhotoCard({ photo, text, error, onTextChange, onAddComment }) {
   return (
     <Card variant="outlined">

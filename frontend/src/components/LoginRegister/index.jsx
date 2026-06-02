@@ -57,12 +57,12 @@ export default function LoginRegister({ onLogin }) {
       return setError("Passwords do not match");
     }
     try {
-      const { password2, ...payload } = form;
-      await postJSON("/user", payload);
-      setSuccess("Registration successful");
+      const { password2, ...userdata } = form;
+      await postJSON("/user", userdata);
+      setSuccess("Register successful");
       resetForm();
     } catch (e) {
-      setError(e.message || "Registration failed");
+      setError(e.message || "Registrater failed");
     }
   };
 

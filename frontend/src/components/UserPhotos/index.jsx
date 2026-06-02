@@ -31,9 +31,12 @@ export default function UserPhotos({ advanced, refresh = 0 }) {
     }
   };
 
-  if (error) return <Typography>Unable to load photos</Typography>;
-  if (loading) return <Typography>Loading...</Typography>;
-  if (!photos.length) return <Typography>No photos found</Typography>;
+  if (error) 
+    return <Typography>Unable to load photos</Typography>;
+  if (loading) 
+    return <Typography>Loading...</Typography>;
+  if (!photos.length) 
+    return <Typography>No photos found</Typography>;
 
   if (advanced) {
     const idx = Math.max(0, photoId ? photos.findIndex((p) => p._id === photoId) : 0);

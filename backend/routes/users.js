@@ -1,6 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const { User, Photo } = require("../db/models");
+const User = require("../db/userModel");
+const Photo = require("../db/photoModel");
 const requireUser = require("../middleware/requireUser");
 
 const router = express.Router();

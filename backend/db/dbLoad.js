@@ -1,7 +1,8 @@
 const mongoose = require("mongoose");
 require("dotenv").config();
 
-const { User, Photo } = require("./models");
+const User = require("./userModel");
+const Photo = require("./photoModel");
 const SchemaInfo = require("./schemaInfo");
 
 async function dbLoad() {

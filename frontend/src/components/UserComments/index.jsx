@@ -4,14 +4,18 @@ import { API_BASE_URL } from "../../config/api";
 import formatDateTime from "../../lib/formatDate";
 import useApi from "../../lib/useApi";
 import "./styles.css";
+// hiển thị các bình luận của người dùng
 
 export default function UserComments() {
   const { userId } = useParams();
   const { data: comments = [], loading, error } = useApi(`/commentsOfUser/${userId}`, [userId]);
 
-  if (error) return <Typography>Unable to load comments</Typography>;
-  if (loading) return <Typography>Loading...</Typography>;
-  if (!comments.length) return <Typography>No comments yet</Typography>;
+  if (error) 
+    return <Typography>Unable load cmt</Typography>;
+  if (loading) 
+    return <Typography>Loading...</Typography>;
+  if (!comments.length) 
+    return <Typography>No cmt</Typography>;
 
   return (
     <Stack spacing={2}>

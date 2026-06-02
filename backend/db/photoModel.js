@@ -1,15 +1,5 @@
 const mongoose = require("mongoose");
 
-const UserSchema = new mongoose.Schema({
-  login_name: { type: String, unique: true },
-  password: { type: String },
-  first_name: { type: String },
-  last_name: { type: String },
-  location: { type: String },
-  description: { type: String },
-  occupation: { type: String },
-});
-
 const CommentSchema = new mongoose.Schema({
   comment: { type: String },
   date_time: { type: Date, default: Date.now },
@@ -23,7 +13,4 @@ const PhotoSchema = new mongoose.Schema({
   comments: [CommentSchema],
 });
 
-module.exports = {
-  User: mongoose.model("Users", UserSchema),
-  Photo: mongoose.model("Photos", PhotoSchema),
-};
+module.exports = mongoose.model("Photos", PhotoSchema);
